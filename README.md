@@ -2,6 +2,8 @@
 
 MovieMix is a responsive movie-discovery web application built with React. Users can browse currently popular movies, search the TMDB catalogue, and maintain a personal favourites list that persists in their browser.
 
+**Live demo:** [moviemix-one.vercel.app](https://moviemix-one.vercel.app/)
+
 ## Highlights
 
 - Browse popular movies fetched from The Movie Database (TMDB) API.
