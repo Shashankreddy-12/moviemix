@@ -1,0 +1,103 @@
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.m-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.m-search form {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    gap: 10px;
+}
+
+.m-search input {
+    flex: 1;
+
+    padding: 13px 16px;
+
+    background-color: #1c1c1c;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.m-search input::placeholder {
+    color: #777;
+}
+
+.m-search input:focus {
+    border-color: #e50914;
+}
+
+.m-search button {
+    padding: 0 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #e50914;
+    color: white;
+
+    font-weight: 600;
+
+    transition: background-color 0.2s ease;
+}
+
+.m-search button:hover {
+    background-color: #b80710;
+}
+
+.m-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 900px) {
+    .m-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .home {
+        padding: 25px 15px;
+    }
+
+    .m-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .m-card img {
+        height: 250px;
+    }
+
+    .m-search form {
+        flex-direction: column;
+    }
+
+    .m-search button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .m-grid {
+        grid-template-columns: 1fr;
+    }
+}

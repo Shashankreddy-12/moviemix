@@ -1,0 +1,29 @@
+.favourites {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.favourites h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.favourites-empty {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #777;
+    text-align: center;
+}
+
+.favourites-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
